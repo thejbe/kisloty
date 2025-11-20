@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e29578",
+                        "secondary": "#e5e5e5",
+                        "background-light": "#f9f9f9",
+                        "background-dark": "#1d1b18",
+                        "text-light": "#333333",
+                        "text-dark": "#EAE8E4",
+                        "bubble-light": "#F4F2EF",
+                        "bubble-dark": "#2a2825",
+                        "bubble-user-light": "#E8EDE7",
+                        "bubble-user-dark": "#313830",
+                        "chip-light": "#F4F2EF",
+                        "chip-dark": "#2a2825",
+                        "chip-border-light": "#EAE8E4",
+                        "chip-border-dark": "#3c3a37"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:py-10 px-4">
+<div class="layout-content-container flex flex-col w-full max-w-2xl flex-1">
+<div class="flex flex-col gap-2 p-4 w-full">
+<div class="flex gap-6 justify-between">
+<p class="text-sm font-medium leading-normal">Step 1 of 5</p>
+</div>
+<div class="rounded-full bg-bubble-light dark:bg-bubble-dark h-2">
+<div class="h-2 rounded-full bg-primary" style="width: 20%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-6 p-4">
+<div class="flex items-start gap-3 justify-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" data-alt="Kisloty App Avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOig2MNMZ4ACFXKXOjkpxspZ78qDoMa6OlJIQUdbtLc5wVS6jGfLVJrzoyOeE4GIAgAAhne69AQIJwrd0PZHvV1ijvP9PxYmpH09I1HoeV6K4O67LAVUlMJuMKDvM1HpqIdhKonPdckYj5mamhYTpmHumUPL5Mg6YIsu3PiL97PjTTaDAj-xnJzzEsJwW5ibODQI8GPLXRvJemW5DslXq3b7HlHc6qWYzcsglUHALHiSi-14O_okPqJsT_8kUWDFpaNypIjuhyPw");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-sm font-medium leading-normal">Kisloty</p>
+<p class="text-base font-normal leading-relaxed flex max-w-md rounded-lg rounded-bl-none px-4 py-3 bg-bubble-light dark:bg-bubble-dark">
+                                    Hey, I'm Kisloty 👋 I help you do more small real-life things with people you care about.
+                                </p>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" data-alt="Kisloty App Avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEQD00s7hZ5uWKN_aob-F9sKxcvsxUMuTu6JibvR-ArqXCH2qK7AW8yo1K13-iQMxlQ0yEYBbkDyW1fc-isGGzdCRmRI15uTruJ2AJExET_JKMfHO1K556e2dg9eVF0pPjaXKrRRuONqTK7_KlIsvGsmUjehyXgPIp7nHDtsK2gPEw0_LhOvdv5IxZ0tvH_x-6eGRu17xT7oMfvgiuqulRrjrA0zJwOQ7RHFqsC-ZCC7fQ6uegOSYBp1X4PR7dz4O-kKsm_reaqA");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-sm font-medium leading-normal">Kisloty</p>
+<p class="text-base font-normal leading-relaxed flex max-w-md rounded-lg rounded-bl-none px-4 py-3 bg-bubble-light dark:bg-bubble-dark">
+                                    Where are you right now?
+                                </p>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-end">
+<div class="flex w-full max-w-md justify-end">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-chip-border-light dark:border-chip-border-dark bg-background-light dark:bg-background-dark h-12 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 p-3 text-base font-normal leading-normal" placeholder="Enter your city or neighborhood" value="Sunnyville"/>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" data-alt="Kisloty App Avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCno4EQcJtCayJdCyk-MUU6Dibv9NwQPVZYAlXnETlZm0b1Q_DbzwLnrYgxT1tnMFSy2RDD28ep3g-aH0_40bTclfY9g3_fjERrPe0yykqvLRo-pOA9LsttOWlEZ2609Ug3pjv0rRyQ0B_Uek2pShUSPJtYzamDj3A5PrgEF02C6HTRgwSRmhg84mQ1BTEko2l8rDs2f5JRUpoRAF2vvyE4V_Sa9L-h4nqmZRXkOfL0H6EOzw8pgsm9qOBHCHsd43VLbbKYHGd7fQ");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-sm font-medium leading-normal">Kisloty</p>
+<p class="text-base font-normal leading-relaxed flex max-w-md rounded-lg rounded-bl-none px-4 py-3 bg-bubble-light dark:bg-bubble-dark">
+                                    How much time do you usually have for small things?
+                                </p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 justify-end">
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">10–20 mins</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium text-white dark:text-text-dark bg-primary border border-primary transition-colors">30–60 mins</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">1–2 hours</button>
+</div>
+<div class="flex items-start gap-3 justify-end">
+<p class="text-base font-medium leading-relaxed flex max-w-md rounded-lg rounded-br-none px-4 py-3 text-white dark:text-text-dark bg-primary">30–60 mins</p>
+</div>
+<div class="flex items-start gap-3 justify-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" data-alt="Kisloty App Avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeyrgEzGxxjjsGY96MI0jWe06tQ9Iv8UBasnqq-zAmGsho27p25evVrZ4K2QB-SU2Zspm95YzC-7od-jiX-4JHYKaY_qfuHT6cX3Rx_M0eZSPm1J7JyuKaSBHi20v2hCXCVNOIUZ_L7qg1jJDHda-nQbMwvi9d4dZ6mt-Mvkj7Zic20CFTV6l7Yb8S8SfriG15DEza7gRcn4kGAKuPFWVspocX6QLsVJipqLT1iqGmmT4PcFABzJqipUuBisCrkxPDniB9-SmRiw");'></div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-sm font-medium leading-normal">Kisloty</p>
+<p class="text-base font-normal leading-relaxed flex max-w-md rounded-lg rounded-bl-none px-4 py-3 bg-bubble-light dark:bg-bubble-dark">
+                                    What’s something you wish you did more often?
+                                </p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 justify-end">
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Cinema</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Markets</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Gym</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Yoga</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Climbing</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Pottery</button>
+<button class="flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium border border-chip-border-light dark:border-chip-border-dark bg-secondary text-text-light hover:bg-bubble-light dark:hover:bg-bubble-dark transition-colors">Other</button>
+</div>
+<div class="flex items-start gap-3 justify-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 h-10 shrink-0" data-alt="Kisloty App Avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDk_cXNC9GDq84iN8CMpwVgWj7GxY0J2B4u7hsFcm1Es8B0S2Eyyk_F5G3navkNeMu_0hb3UB1BuofnFr4JhuUsP0NFNwKM4ZzfMKHr78Ytrh4mO3rk5JlJ22dw9z0ZCeCkxAVI3LR0gz8E632lCYd9PQuDRaYjMuJZ4iVzyYU3R2UMG4f0G0_lRG_8GayOUNpon6W7AW-r1_NXj9P4uSqYZGao0D5QdUyF92egETBbl89oDJVyI8gHUxyL10fTpjvi6le52tVaHg");'></div>
+<div class="flex flex-1 flex-col gap-3 items-start">
+<p class="text-sm font-medium leading-normal">Kisloty</p>
+<p class="text-base font-normal leading-relaxed flex max-w-md rounded-lg rounded-bl-none px-4 py-3 bg-bubble-light dark:bg-bubble-dark">
+                                    Nice, thanks! I’ll use this to suggest gentle ideas. Let’s head to your home feed.
+                                </p>
+<button class="flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-base font-medium text-white bg-primary hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
+<span>Go to Home Feed</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

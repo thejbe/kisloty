@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty - Top App Bar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FFD100",
+            "background-light": "#f9f9f9",
+            "background-dark": "#1a1a1a",
+            "border-light": "#eeeeee",
+            "border-dark": "#2a2a2a",
+            "text-light": "#333333",
+            "text-dark": "#cccccc",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<div class="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+<a aria-label="Kisloty Home" class="flex items-center gap-3 transition-transform duration-200 hover:scale-105" href="#">
+<div class="flex size-9 items-center justify-center rounded-md bg-black p-1">
+<svg class="text-primary" fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"></path>
+<circle cx="8.5" cy="10.5" fill="black" r="1.5"></circle>
+<circle cx="15.5" cy="10.5" fill="black" r="1.5"></circle>
+<path d="M12 14C10.03 14 8.22 15.06 7.21 16.5C7.71 16.81 8.29 17 9 17H15C15.71 17 16.29 16.81 16.79 16.5C15.78 15.06 13.97 14 12 14Z" fill="black"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-text-light dark:text-text-dark">Kisloty</h1>
+</a>
+<div class="flex items-center gap-4">
+<p class="text-base text-text-light dark:text-text-dark">Hi, Sarah.</p>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar with a colorful abstract gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC15VTjEwfWBPEZa5COcX1-wI5krzDMlew2qFxJz9eFwmMX08wVkj-cYmGRO4xw0xBLlBAC5_WWfnAjyW9vIcbS_pX-JyyEF3DwkfvpvN2MpGmtCMiGiDZeZjJHv95rXU5rIhLvwIbTwn-_pats8mwsX86ChTjhmk7OReNy_N83qAGdjaOfEBX4ZBoqZMSuRz8a24uwLf6ZEMml47qkSADY8c-wNQ95BSpJv87il0AksxqGAIalzZx8SoQRDnDL96VtcEf0KwEODQ");'></div>
+</div>
+</div>
+</header>
+<main class="container mx-auto flex-1 p-4 sm:p-6 lg:p-8">
+<!-- Main content of the page would go here -->
+<div class="flex h-[80vh] items-center justify-center rounded-lg border-2 border-dashed border-border-light dark:border-border-dark">
+<p class="text-text-light/50 dark:text-text-dark/50">Page Content Area</p>
+</div>
+</main>
+</div>
+</body></html>

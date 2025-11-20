@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty - Chip Components</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#e29578",
+              "background-light": "#f8f6f6",
+              "background-dark": "#201612",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#1a120f] dark:text-background-light">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="px-4 py-6 sm:px-6 lg:px-8">
+<div class="mx-auto flex max-w-4xl items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-black">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 9.00002C9 9.00002 9.5 7.50002 10.5 7.50002C11.5 7.50002 12 9.00002 12 9.00002" stroke="#FFC700" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M15 9.00002C15 9.00002 15.5 7.50002 16.5 7.50002C17.5 7.50002 18 9.00002 18 9.00002" stroke="#FFC700" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M9.5 15C9.5 15 10.5 16.5 12 16.5C13.5 16.5 14.5 15 14.5 15" stroke="#FFC700" stroke-linecap="round" stroke-width="1.5"></path>
+<rect height="16.5" rx="1.25" stroke="#FFC700" stroke-width="1.5" width="16.5" x="3.75" y="3.75"></rect>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-[#1a120f] dark:text-background-light">Kisloty</span>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center p-4 sm:p-6 lg:p-8">
+<div class="layout-content-container flex w-full max-w-4xl flex-col items-start gap-8">
+<div class="w-full rounded-xl bg-white dark:bg-background-dark/50 p-6 shadow-[0px_4px_16px_rgba(0,0,0,0.05)] sm:p-8">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<h1 class="text-[#1a120f] dark:text-background-light text-2xl font-bold leading-tight tracking-tight sm:text-3xl">What sounds good to you?</h1>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Select a few things you're in the mood for.</p>
+</div>
+<div class="flex flex-col gap-6">
+<div>
+<p class="text-[#1a120f] dark:text-background-light text-sm font-medium leading-normal pb-2">Your selection</p>
+<div class="flex flex-wrap gap-3">
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white transition-colors duration-200 ease-in-out hover:bg-primary/90">
+<p class="text-sm font-medium leading-normal">Try a new cafe</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white transition-colors duration-200 ease-in-out hover:bg-primary/90">
+<p class="text-sm font-medium leading-normal">Visit a museum</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white transition-colors duration-200 ease-in-out hover:bg-primary/90">
+<p class="text-sm font-medium leading-normal">Cozy movie night</p>
+</div>
+</div>
+</div>
+<div>
+<p class="text-[#1a120f] dark:text-background-light text-sm font-medium leading-normal pb-2">More ideas</p>
+<div class="flex flex-wrap gap-3">
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light transition-colors duration-200 ease-in-out hover:bg-gray-300/80 dark:hover:bg-white/20">
+<p class="text-sm font-medium leading-normal">Go for a hike</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light transition-colors duration-200 ease-in-out hover:bg-gray-300/80 dark:hover:bg-white/20">
+<p class="text-sm font-medium leading-normal">Play board games</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light transition-colors duration-200 ease-in-out hover:bg-gray-300/80 dark:hover:bg-white/20">
+<p class="text-sm font-medium leading-normal">Attend a concert</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light transition-colors duration-200 ease-in-out hover:bg-gray-300/80 dark:hover:bg-white/20">
+<p class="text-sm font-medium leading-normal">Cook together</p>
+</div>
+<div class="flex h-10 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light transition-colors duration-200 ease-in-out hover:bg-gray-300/80 dark:hover:bg-white/20">
+<p class="text-sm font-medium leading-normal">Explore a market</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full rounded-xl border border-dashed border-gray-300 dark:border-gray-700 bg-transparent p-6 sm:p-8">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col">
+<h2 class="text-lg font-semibold dark:text-background-light">Component States</h2>
+<p class="text-gray-500 dark:text-gray-400">For design system reference</p>
+</div>
+<div>
+<h3 class="text-base font-medium leading-normal pb-3 text-gray-700 dark:text-gray-300">Inactive Chip</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 text-[#1a120f] dark:text-background-light">
+<p class="text-sm font-medium leading-normal">Inactive</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-base font-medium leading-normal pb-3 text-gray-700 dark:text-gray-300">Inactive Chip (Hover)</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-gray-300/80 dark:bg-white/20 px-4 text-[#1a120f] dark:text-background-light shadow-sm">
+<p class="text-sm font-medium leading-normal">Hover</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-base font-medium leading-normal pb-3 text-gray-700 dark:text-gray-300">Selected Chip</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white">
+<p class="text-sm font-medium leading-normal">Selected</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty - Do more things together</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#e29578",
+            "background-light": "#f9f9f9",
+            "background-dark": "#181818",
+            "text-light": "#333333",
+            "text-dark": "#E5E5E5",
+            "card-light": "#FFFFFF",
+            "card-dark": "#212121",
+            "secondary-light": "#e5e5e5",
+            "secondary-dark": "#2A2A2A"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "1rem", "lg": "1.5rem", "xl": "3rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+<div class="mx-auto flex w-full max-w-4xl flex-col items-center">
+<main class="flex w-full flex-col items-center gap-12 py-10 lg:flex-row lg:items-center lg:gap-16">
+<div class="flex w-full flex-col items-center gap-6 text-center lg:w-1/2 lg:items-start lg:gap-8 lg:text-left">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-tighter sm:text-5xl lg:text-6xl">Kisloty</h1>
+<h2 class="text-xl font-bold text-primary sm:text-2xl">Do more things together.</h2>
+<p class="text-base text-text-light/80 dark:text-text-dark/80 sm:text-lg">A gentle app that helps you do small real-life things with friends, instead of doomscrolling.</p>
+</div>
+<div class="flex flex-col gap-3 sm:flex-row">
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-6 text-base font-bold text-white shadow-sm transition-transform hover:scale-105">
+<span class="truncate">Get started</span>
+</button>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-secondary-light dark:bg-secondary-dark px-6 text-base font-bold text-text-light dark:text-text-dark transition-colors hover:bg-black/10 dark:hover:bg-white/10">
+<span class="truncate">How it works</span>
+</button>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="relative flex flex-col items-center justify-center p-4">
+<div class="z-10 w-full max-w-sm rounded-lg border border-black/5 bg-card-light dark:bg-card-dark p-4 shadow-lg transition-transform hover:-translate-y-1 dark:border-white/5" style="transform: rotate(-3deg) translateY(0px);">
+<p class="text-base sm:text-lg">Mia is grabbing a coffee ☕</p>
+</div>
+<div class="z-20 w-full max-w-sm rounded-lg border border-black/5 bg-card-light dark:bg-card-dark p-4 shadow-xl transition-transform hover:-translate-y-1 dark:border-white/5" style="transform: rotate(2deg) translateY(-20px);">
+<p class="text-base sm:text-lg">Tom is going for a 10-min walk 🚶</p>
+</div>
+<div class="z-30 w-full max-w-sm rounded-lg border border-black/5 bg-card-light dark:bg-card-dark p-4 shadow-2xl transition-transform hover:-translate-y-1 dark:border-white/5" style="transform: rotate(-1deg) translateY(-40px);">
+<p class="text-base sm:text-lg">You might like to read somewhere cosy 📖</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

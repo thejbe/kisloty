@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty - Activity Tile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e29578",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#201612",
+                        "card-light": "#ffffff",
+                        "card-dark": "#2d2420",
+                        "text-light-primary": "#333333",
+                        "text-dark-primary": "#f8f6f6",
+                        "text-light-secondary": "#828282",
+                        "text-dark-secondary": "#a9a19c",
+                        "button-secondary-light": "#e5e5e5",
+                        "button-secondary-dark": "#4a403b",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between p-4 sm:p-6 lg:px-8 border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-yellow-300 flex items-center justify-center rounded-md">
+<div class="w-6 h-6 bg-black flex items-center justify-center rounded-sm">
+<span class="text-yellow-300 text-sm font-bold">:)</span>
+</div>
+</div>
+<h1 class="text-xl font-bold text-text-light-primary dark:text-text-dark-primary">Kisloty</h1>
+</div>
+<button aria-label="Toggle dark mode" class="flex min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-card-light dark:bg-card-dark text-text-light-primary dark:text-text-dark-primary shadow-sm hover:bg-gray-100 dark:hover:bg-gray-700" id="theme-toggle">
+<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</header>
+<main class="flex-1 px-4 py-8 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-lg">
+<!-- Reusable Activity Tile Component -->
+<div class="flex flex-col gap-6">
+<!-- Activity Tile Example 1: With Location -->
+<div class="flex w-full flex-col gap-4 rounded-xl bg-card-light dark:bg-card-dark p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+<div class="flex items-center gap-3">
+<img class="h-10 w-10 rounded-full object-cover" data-alt="Profile picture of a woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhCCtZ442kaKDveBFs9AnstsnlhO8kjdkKNlV-NkTxcWMiGLJ8OFruG7dew6o7u98dsZ4-ViMD9zI0_MyhQg7LIAIOmvdwmC0ca3o_EjHdAVYQI2ksCFQnGjQ6u_Xb9vXK--nnmyp7WlCllOcmEqSkxMKdhhegWy1uesL-dbCDbJ4h-POGulu2Ckj3gjHVa-dVAIit1odO15cXe9JHNpVIm0Um3tlHR0767TNG9zJ9GRatYRzRExJT6smgl_-fejHOEwmzxc8p3Q"/>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Daisy</p>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-lg text-text-light-primary dark:text-text-dark-primary">...is going for a walk in Walthamstow</p>
+<div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<p>This afternoon</p>
+<span class="text-gray-300 dark:text-gray-600">•</span>
+<span class="inline-flex items-center rounded-full bg-primary/20 px-2.5 py-0.5 text-sm font-medium text-primary dark:text-primary">Walthamstow</span>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-start pt-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-button-secondary-light dark:bg-button-secondary-dark text-text-light-primary dark:text-text-dark-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">Say hi</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white dark:text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">I'll do this too</span>
+</button>
+</div>
+</div>
+<!-- Activity Tile Example 2: Without Location -->
+<div class="flex w-full flex-col gap-4 rounded-xl bg-card-light dark:bg-card-dark p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+<div class="flex items-center gap-3">
+<img class="h-10 w-10 rounded-full object-cover" data-alt="Profile picture of a man with a beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJUuN5FxUQpF-7WkYAjCaK37goacKDFv3-0VGK7SlcCk2-FGwlNGJq0xEjO1uaZVEPYQMsJIb6mjGl4wUT2q6EtGG1bjGRvY1_67nBqnkZofQ4SqDuYm20HA2coMWPHyvqcPCa_St9X9YJAlwbZ6QOwb7kfejAbDXa1FznciBvU_ZdC9UysyTOa6zGv__4sHsG8FqpNCXolGifeBEpNYmaj8fARPQ7zfCiKrl_FB5yXF_axKPefCjAoolVTzmrWpMAqGd3SJmMjw"/>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Alex</p>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-lg text-text-light-primary dark:text-text-dark-primary">...is grabbing a coffee</p>
+<div class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<p>Saturday morning</p>
+</div>
+</div>
+<div class="flex items-center gap-3 justify-start pt-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-button-secondary-light dark:bg-button-secondary-dark text-text-light-primary dark:text-text-dark-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">Say hi</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white dark:text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">I'll do this too</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<!-- Simple script for theme toggling -->
+<script>
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
+</body></html>

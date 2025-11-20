@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisloty - Home Feed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#e29578",
+              "secondary": "#e5e5e5",
+              "background-light": "#f9f9f9",
+              "background-dark": "#1A1816",
+              "text-light": "#4A4A4A",
+              "text-dark": "#D1D1D1",
+              "card-light": "#FFFFFF",
+              "card-dark": "#242220",
+              "muted-light": "#A1A1A1",
+              "muted-dark": "#7A7A7A"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "1rem",
+                "lg": "1.5rem",
+                "xl": "2rem",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-center border-b border-black/5 bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:border-white/5 dark:bg-background-dark/80 md:px-8">
+<div class="flex w-full max-w-3xl items-center justify-between">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+<div class="size-5">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill-rule="evenodd"></path></svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Kisloty</h2>
+</div>
+<div class="flex flex-1 justify-end">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile avatar of a person smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCovw5C08y0BWwkG_93CVw19v9o_BEMqMMdSd20FtEhbk-OToMLwA0DgnW2E_yMFUomj4qgMwLLAqs5Y8n_YG2hRXHQdjJozSTt0U2m76vKu-RLkLDdz320A-2dCDonZLkWB6O9wN8X6zrxMEfgX9dsoVQvvxJFEwEiucL4QTfT7kcXDX7-9Xid8fhT2jAL2SERJuru360isjHnJ7XPAwQkc3pyimsTlTRwqh7GzprOVg1m2HQ7eneMQ6GQCLsapLIZbVcPHDe8nw");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center px-4 py-8 md:px-8 md:py-12">
+<div class="layout-content-container flex w-full max-w-3xl flex-1 flex-col gap-8">
+<div class="flex flex-wrap justify-between gap-3">
+<div class="flex flex-col gap-2">
+<p class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark md:text-4xl">Hi, Amelia.</p>
+<p class="text-base font-normal text-muted-light dark:text-muted-dark">Here are some small things you could do.</p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-col rounded-lg bg-card-light p-5 shadow-sm shadow-black/5 dark:bg-card-dark">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-full bg-cover bg-center" data-alt="Profile picture of Alex" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWO1wm03gUelqCeecqIXBmgx2FL7OwEA66kgF5YrI1eatn0fZIt_GDoevSVsLNxtgvo2k7SEBdA28zTN9sx1wruYeyEmpm7m4bIba7kBoQA2YWgVzprIXEmL9GrYP7MIzuN9ogRtT3GrVFJ9CerLc7ZP1UkqAu7a1AiBtRSvPm37N-x9pUhJ9j0ecxxYejP7vpKJnfPshrZvpFaBytN2BAzLOuAnUS4ckQUowpUan-RuqkhOJbLZtfDMxVUbPR75dAPP5gUR327w')"></div>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">Alex is getting...</p>
+</div>
+<p class="my-3 text-lg font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Coffee near Brixton ☕</p>
+<div class="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-light dark:text-muted-dark">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined !text-base">schedule</span>This afternoon</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined !text-base">location_on</span>Brixton</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-secondary text-sm font-medium text-text-light transition-colors hover:bg-black/10 dark:bg-white/10 dark:text-text-dark dark:hover:bg-white/20">
+<span class="truncate">I'll do this too</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-sm font-medium text-white transition-opacity hover:opacity-90">
+<span class="truncate">Say hi</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col rounded-lg bg-card-light p-5 shadow-sm shadow-black/5 dark:bg-card-dark">
+<p class="mb-3 text-sm font-medium text-primary">Tiny idea</p>
+<p class="text-lg font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">It’s a quiet evening – would you like to read somewhere cosy for 20 mins?</p>
+<div class="mt-4 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+<button class="text-sm font-medium text-muted-light underline-offset-4 hover:underline dark:text-muted-dark">See another idea</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-sm font-medium text-white transition-opacity hover:opacity-90">
+<span class="truncate">Start this</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col rounded-lg bg-card-light p-5 shadow-sm shadow-black/5 dark:bg-card-dark">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-full bg-cover bg-center" data-alt="Profile picture of Jordan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHEIIzDE-TaiT2tzPXsMUdF5hEnhu-SuPB0IU8Whmzeb2B-pFHFaRlLJzJ-gFlNH_AoWTaVAJ-J1KG7LoThjkV4BXnkj1NPfSDYALaFoiYuu1j_MwnkJJ4rk8PodYjadr8bIIXVUB-j6XnVez5_e72BFG8Y9PvwerBAAaVaIezL0CesFGnfjsiWF_Chaoufp28nrGvxQa5hO3MpOY1LFs8rnySXBsmGYcd_uTDmZB-hRMDESZsWXWaowS7Xgc0x-65YdYUuF7YEg')"></div>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">Jordan is planning to...</p>
+</div>
+<p class="my-3 text-lg font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Walk through the park 🌳</p>
+<div class="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-light dark:text-muted-dark">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined !text-base">schedule</span>Tomorrow morning</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-secondary text-sm font-medium text-text-light transition-colors hover:bg-black/10 dark:bg-white/10 dark:text-text-dark dark:hover:bg-white/20">
+<span class="truncate">I'll do this too</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-sm font-medium text-white transition-opacity hover:opacity-90">
+<span class="truncate">Say hi</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<button class="fixed bottom-6 right-6 z-20 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-105 active:scale-95 md:h-16 md:w-auto md:px-6 md:gap-2">
+<span class="material-symbols-outlined !text-2xl">add</span>
+<span class="hidden text-base font-medium md:inline">Start a small thing</span>
+</button>
+</div>
+</body></html>
