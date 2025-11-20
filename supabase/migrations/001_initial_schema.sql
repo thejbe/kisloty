@@ -98,10 +98,7 @@ create table friendships (
   updated_at timestamptz default now() not null,
 
   -- Prevent self-friendship
-  constraint no_self_friendship check (user_id != friend_id),
-
-  -- Ensure unique friendship pairs (undirected)
-  constraint unique_friendship unique (least(user_id, friend_id), greatest(user_id, friend_id))
+  constraint no_self_friendship check (user_id != friend_id)
 );
 
 -- =====================================================
@@ -127,6 +124,9 @@ create index idx_activities_visibility on activities(visibility);
 create index idx_friendships_user_id on friendships(user_id);
 create index idx_friendships_friend_id on friendships(friend_id);
 create index idx_friendships_status on friendships(status);
+
+-- Unique index for undirected friendship pairs
+create unique index idx_unique_friendship on friendships (least(user_id, friend_id), greatest(user_id, friend_id));
 
 -- =====================================================
 -- UPDATED_AT TRIGGER FUNCTION
